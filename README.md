@@ -26,7 +26,7 @@ The tasks are split in to different tasks to make it easier to discuss during th
 
 Your task is to build a weather component like the one in the screenshot below.
 
-
+![example-screenshot](https://user-images.githubusercontent.com/9809256/89180436-aee99180-d589-11ea-878a-b2263faf9371.png)
 
 The screenshot above is purely an example, the important parts are the features and overall structure.
 
