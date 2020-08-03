@@ -1,6 +1,6 @@
 # JUXT Tech Test
 
-## Intro
+## Test instructions
 
 This repository contains a boilerplate ClojureScript app, based on the leiningen figwheel template.
 
@@ -47,3 +47,39 @@ In this task we will expand our app to check the weather in a range of locations
 Example:
 
 [http://g.recordit.co/66Vxm6ht9e.gif](http://g.recordit.co/66Vxm6ht9e.gif)
+
+## Setting up the project
+
+The existing code is based off a lein figwheel template with the cljs-ajax dependency added for making http requests.
+You shouldn't need to add any new dependencies to complete the tasks, though you can if you feel it is beneficial to do so.
+
+To get an interactive development environment run:
+
+    npm install
+    lein figwheel
+
+and open your browser at [localhost:3449](http://localhost:3449/).
+This will auto compile and send all changes to the browser without the
+need to reload. After the compilation process is complete, you will
+get a Browser Connected REPL. An easy way to try it is:
+
+    (js/alert "Am I connected?")
+
+and you should see an alert in the browser window.
+
+To clean all compiled files:
+
+    lein clean
+
+To create a production build run:
+
+    lein do clean, cljsbuild once min
+
+And open your browser in `resources/public/index.html`. You will not
+get live reloading, nor a REPL. 
+
+## License
+
+Copyright © 2020 JUXT
+
+Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
