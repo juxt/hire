@@ -6,21 +6,21 @@ This repository contains a boilerplate ClojureScript app, based on the leiningen
 
 Your task is to follow the steps below to build a simple weather component and submit a private repository forked from this one.
 
-The repo should contain:
+Your repo should contain:
 
-- A list of issues with the current code
-- The codebase itself.
+- The codebase itself
 - A test suite (whatever seems appropriate)
+- A description of what you could have done better given more time
 
 Try to treat this as you would a professional project with multiple people on the team (e.g keep code clean, use good commit messages etc). This is more important than actually finishing all the tasks.
 
-We don’t expect the application to be production level quality. However, we’re interested in your thinking process, and are looking for you to identify decisions you make which would be different if you were given the time to build this in a more complete way. 
+We don’t expect the application to be production level quality. However, we’re interested in your thinking process, and are looking for you to identify decisions you make which would be different if you were given the time to build this in a more complete way.
 
 Try to limit yourself to no more than 3 hours, as in the real world, there is more work to be done here than time available, so part of the test is how you manage your time.
 
 ## Tasks
 
-The tasks are split in to different tasks to make it easier to discuss during the review, you don't need to submit different apps for each part, each part builds on top of the last.
+The tasks are split in to different parts to make it easier to discuss during the review. Each part builds on top of the last.
 
 ### Part 1
 
