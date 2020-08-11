@@ -11,6 +11,7 @@ Your repo should contain:
 - The codebase itself
 - A test suite (whatever seems appropriate)
 - A description of what you could have done better given more time
+- A screenshot of your app
 
 Try to treat this as you would a professional project with multiple people on the team (e.g keep code clean, use good commit messages etc). This is more important than actually finishing all the tasks.
 
