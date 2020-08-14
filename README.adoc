@@ -1,6 +1,6 @@
-# JUXT Tech Test
+= JUXT Tech Test
 
-## Test instructions
+== Test instructions
 
 This repository contains a boilerplate ClojureScript app, based on the leiningen figwheel template.
 
@@ -23,23 +23,23 @@ Try to limit yourself to no more than 3 hours, as in the real world, there is mo
 
 The tasks are split in to different parts to make it easier to discuss during the review. Each part builds on top of the last.
 
-### Part 1
+=== Part 1
 
 Your task is to build a weather component like the one in the screenshot below.
 
-![example-screenshot](https://user-images.githubusercontent.com/9809256/89180436-aee99180-d589-11ea-878a-b2263faf9371.png)
+image::https://user-images.githubusercontent.com/9809256/89180436-aee99180-d589-11ea-878a-b2263faf9371.png[]
 
 The screenshot above is purely an example, the important parts are the features and overall structure.
 
-You can find the icons used here [https://erikflowers.github.io/weather-icons/](https://erikflowers.github.io/weather-icons/) although you do not need to use icons, you can have text labels if you want, as long as the result is clearly readable and has feature parity.
+You can find the icons used here https://erikflowers.github.io/weather-icons/ although you do not need to use icons, you can have text labels if you want, as long as the result is clearly readable and has feature parity.
 
 For this task you can hardcode all of the data to the values used in the screenshot, but try and keep in mind that the data will eventually come from an external source.
 
-### Part 2
+=== Part 2
 
 You should now have a nice looking weather component, but it isn't much use as it doesn't give the right information!
 
-Using a location of your choice (somewhere in the UK) and the darksky API, fetch the data required when the page is loaded, and when the refresh icon is clicked. Have a look at this jsfiddle for an example of using the darksky api (you may use the url here to save you needing to register for an account) [http://jsfiddle.net/wsfx0gdL](http://jsfiddle.net/wsfx0gdL)
+Using a location of your choice (somewhere in the UK) and the darksky API, fetch the data required when the page is loaded, and when the refresh icon is clicked. Have a look at this jsfiddle for an example of using the darksky api (you may use the url here to save you needing to register for an account) http://jsfiddle.net/wsfx0gdL
 
 ### Part 3
 
@@ -47,7 +47,7 @@ In this task we will expand our app to check the weather in a range of locations
 
 Example:
 
-[http://g.recordit.co/66Vxm6ht9e.gif](http://g.recordit.co/66Vxm6ht9e.gif)
+image::http://g.recordit.co/66Vxm6ht9e.gif[]
 
 ## Setting up the project
 
@@ -56,31 +56,41 @@ You shouldn't need to add any new dependencies to complete the tasks, though you
 
 To get an interactive development environment run:
 
-    npm install
-    lein figwheel
+[source]
+----
+npm install
+lein figwheel
+----
 
-and open your browser at [localhost:3449](http://localhost:3449/).
+and open your browser at http://localhost:3449/
+
 This will auto compile and send all changes to the browser without the
 need to reload. After the compilation process is complete, you will
 get a Browser Connected REPL. An easy way to try it is:
 
-    (js/alert "Am I connected?")
+----
+(js/alert "Am I connected?")
+----
 
 and you should see an alert in the browser window.
 
 To clean all compiled files:
 
-    lein clean
+----
+lein clean
+----
 
 To create a production build run:
 
-    lein do clean, cljsbuild once min
+----
+lein do clean, cljsbuild once min
+----
 
 And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
+get live reloading, nor a REPL.
 
-## License
+== License
 
-Copyright © 2020 JUXT
+Copyright © 2020 JUXT LTD.
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
