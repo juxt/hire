@@ -1,0 +1,11 @@
+^{:watch-dirs ["src"]
+  :ring-server-options {:port 9510}
+  :auto-testing {:cljs-test-display true}}
+
+{:main weather-app.core
+ :optimizations :none
+ :output-dir "resources/public/cljs-out"
+ :output-to "resources/public/cljs-out/dev.js"
+ :compiler-stats true
+ :parallel-build true
+ :preloads [figwheel.core figwheel.main figwheel.repl.preload]}

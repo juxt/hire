@@ -41,6 +41,8 @@ You should now have a nice looking weather component, but it isn't much use as i
 
 Using a location of your choice (somewhere in the UK) and the darksky API, fetch the data required when the page is loaded, and when the refresh icon is clicked. Have a look at this jsfiddle for an example of using the darksky api (you may use the url here to save you needing to register for an account) http://jsfiddle.net/wsfx0gdL
 
+Beware that darsky is not accepting new signups (https://darksky.net/dev) so if you have to either use the jsfiddle above or you need to use another API to fetch the weather information.
+
 ### Part 3
 
 In this task we will expand our app to check the weather in a range of locations. Using the data available from [this URL](https://raw.githubusercontent.com/lutangar/cities.json/master/cities.json), give the end user a way to search for a location and select it. Once selected, the weather data for that location should be displayed in the card.
@@ -56,13 +58,11 @@ You shouldn't need to add any new dependencies to complete the tasks, though you
 
 To get an interactive development environment run:
 
-[source]
 ----
-npm install
-lein figwheel
+lein fig
 ----
 
-and open your browser at http://localhost:3449/
+and open your browser at http://localhost:9510/
 
 This will auto compile and send all changes to the browser without the
 need to reload. After the compilation process is complete, you will
@@ -83,7 +83,7 @@ lein clean
 To create a production build run:
 
 ----
-lein do clean, cljsbuild once min
+lein do clean, cljs-prod
 ----
 
 And open your browser in `resources/public/index.html`. You will not
