@@ -1,0 +1,11 @@
+^{:auto-testing false}
+{:main weather-app.core
+ :output-dir "resources/public/cljs-out"
+ :output-to "resources/public/cljs-out/prod.js"
+ :optimizations :advanced
+ :compiler-stats true
+ :parallel-build true
+ :pretty-print false
+ :aot-cache true
+ :elide-asserts true
+ :warnings {:fn-deprecated false}}
