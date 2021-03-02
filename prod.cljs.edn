@@ -1,5 +1,5 @@
 ^{:auto-testing false}
-{:main weather-app.core
+{:main air-quality-app.core
  :output-dir "resources/public/cljs-out"
  :output-to "resources/public/cljs-out/prod.js"
  :optimizations :advanced
